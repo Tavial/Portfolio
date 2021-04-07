@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+body{
+	margin:0;
+	background-color: #F6F5F5;
+}
+/*
+@media only screen and (max-width: 767px) {
+
+	body {
+
+	background-image: url(../img/mi_foto.png);
+
+	}
+}
+*/
+
+header{
+	width:100%; 
+	height:45em;
+	background-image:url("../img/fondo2.png");
+	background-repeat:no-repeat;
+	background-size: cover;
+	/*background-attachment: fixed;*/
+	/*height:37em; 
+	max-width:100%;
+    margin: 0 auto;
+	overflow:hidden;*/
+}
+
+/*
+header img{
+	margin:0;
+	padding:0;
+	width:100%; 
+	height:100%;
+}
+*/
+
+nav li{
+	display:inline;
+	margin-left:0.8em;
+	font:1.2em 'Fabada';
+	font-weight: 900;
+}
+nav li:hover{
+	color:red;
+	cursor:pointer;
+	cursor:hand;
+}
+nav ul{
+	width:50%;
+	margin: 0.5em auto;
+}
+
+.perfil{
+	float:left;
+	margin-bottom:4em;
+	margin-top:2.5em;
+	
+}
+.perfil h1{
+	font:bold 3em 'Fabada';
+	text-align:center;
+	width:65%;
+	margin: 1em auto;
+	border:0.1em solid rgba(69, 146, 175, 0.8); /*aplicamos borde a la caja*/
+	border-radius: 0.5em; /*Redondea el borde de la caja*/
+	box-shadow: #4592AF 0.1em 0.1em 0.5em; /*sombreado de la caja*/
+	background: linear-gradient(#E3C4A8, #F6F5F5); /*aplicamos gradiente lineal*/
+	text-shadow: #33313B 0.1em 0.1em 0.2em; /*sombreamos el texto*/
+	margin-bottom:2em;
+}
+.perfil p{
+	font:1.2em 'Fabada';	
+	line-height:1.68;
+	width:90%;
+	text-align:justify;
+
+}
+
+.perfil img{
+	float:left;
+	height: 30em;
+	width: 30em;
+	margin:0em 25em 5em 15em;
+	padding:0;
+	border-radius:50%;
+	overflow:hidden;
+	shape-outside: circle(30%) margin-box;
+	/*margin:50px;*/
+	
+}
+
+.tools{
+	float:left;
+}
+
+.tools h1{
+	
+	font:bold 3em 'Fabada';
+	text-align:center;
+	width:60%;
+	margin: 1em 1em;
+	padding: 0.5em 0.5em 0.5em 0.5em;
+	border:0.1em solid rgba(69, 146, 175, 0.8); /*aplicamos borde a la caja*/
+	border-radius: 0.5em; /*Redondea el borde de la caja*/
+	box-shadow: #4592AF 0.1em 0.1em 0.5em; /*sombreado de la caja*/
+	background: linear-gradient(#E3C4A8, #F6F5F5); /*aplicamos gradiente lineal*/
+	text-shadow: #33313B 0.1em 0.1em 0.2em; /*sombreamos el texto*/
+}
+
+.herramientas{
+	float:left;
+}
+
+.herramientas figcaption{
+	padding: 0.1em 0.1em 0.1em 0.1em;
+	margin-left:2.7em;
+	margin-right:2em;
+	font:1em 'Fabada';
+	font-weight:300;
+	text-align:center;
+	text-shadow: #33313B 0.1em 0.1em 0.8em; /*sombreamos el texto*/
+}
+
+.herramientas img{
+	left: 0;
+	height: 10em;
+	width: 10em;
+}
+
+.mi_portfolio{
+	clear:both;
+}
+
+.mi_portfolio h1{
+	font:bold 3em 'Fabada';
+	text-align:center;
+	width:20%;
+	margin: 1em 1em;
+	padding: 0.3em 0.3em 0.3em 0.3em;
+	border:0.1em solid rgba(69, 146, 175, 0.8); /*aplicamos borde a la caja*/
+	border-radius: 0.5em; /*Redondea el borde de la caja*/
+	box-shadow: #4592AF 0.1em 0.1em 0.5em; /*sombreado de la caja*/
+	background: linear-gradient(#E3C4A8, #F6F5F5); /*aplicamos gradiente lineal*/
+	text-shadow: #33313B 0.1em 0.1em 0.2em; /*sombreamos el texto*/
+}
+
+.portfolio {
+  float:left;
+  position: relative;
+  height: 21em;
+  width: 31em;
+  margin: 0em 0em 0em 0em;
+  
+}
+
+.portfolio img {
+  position: absolute;
+  left: 0;
+  height: 19.5em;
+  width: 31em;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.portfolio img.top:hover {
+  opacity: 0;
+}
+
+.portfolio figcaption{
+	font:1em 'Fabada';
+	font-weight:300;
+	margin-top:19.5em;
+	text-align:center;
+	text-shadow: #33313B 0.1em 0.1em 0.8em; /*sombreamos el texto*/	
+}
+
+footer{
+	float:left;
+	clear:both;
+	padding: 0.1em 0.5em 0.1em 0.5em;
+}
+
