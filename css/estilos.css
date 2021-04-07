@@ -1,10 +1,30 @@
 @charset "utf-8";
-
+/* PARTE COMÚN */
 body{
 	margin:0;
 	background-color: #F6F5F5;
 }
 
+/* MENU */
+nav li{
+	display:inline;
+	margin-right:0.8em;
+	font:1.8em 'Fabada';
+	font-weight: 900;
+}
+
+nav li:hover{
+		color:red;
+		cursor:pointer;
+		cursor:hand;
+}
+
+nav ul{
+	width:80%;
+	margin: 0.2em auto;
+}
+
+/* HEADER*/
 header{
 	height:44em;
 }
@@ -17,32 +37,117 @@ header img{
 	height:100%;
 }
 
-nav li{
-	display:inline;
-	margin-right:0.8em;
-	font:1.8em 'Fabada';
-	font-weight: 900;
+/*MI PERFIL*/
+
+.perfil{
+	float:left;
+	width:100%;
+	margin-bottom:4em;
+	margin-top:2.5em;
+	clear:both;
+	
 }
 
-nav ul{
+
+.perfil h1{
+	
+	font:bold 3em 'Fabada';
+	/*border:0.1em solid rgba(69, 146, 175, 0.8); /*aplicamos borde a la caja*/
+	/*border-radius: 0.5em; /*Redondea el borde de la caja*/
+	/*box-shadow: #4592AF 0.1em 0.1em 0.5em; /*sombreado de la caja*/
+	/*background: linear-gradient(#E3C4A8, #F6F5F5); /*aplicamos gradiente lineal*/
+	text-shadow: #33313B 0.1em 0.1em 0.2em; /*sombreamos el texto*/
 	width:80%;
-	margin: 0.2em auto;
+	text-align:center;
+	/*margin-bottom:2em;*/
+	
 }
 
-@media only screen and (min-width : 1224px){
+.perfil img{
+	float:left;
+	padding:0;
+	border-radius:50%;
+	overflow:hidden;	
+}
+
+
+
+
+/* ESPECÍFICO PARA PC */
+
+@media only screen and (min-width : 1100px){
 nav {
 		padding-left:13em;
 		margin: 0.2em auto;
 	}
-}
+
 nav ul{
 	padding-left:7em;
 }
 
 
-@media only screen and (min-width : 320px) and (max-width : 1224px){
+.perfil h1{
+	
+	margin-left:4em;
+}
+
+.perfil img{
+	
+	height: 30em;
+	width: 30em;
+	margin:0em 25em 5em 15em;
+	shape-outside: circle(30%) margin-box;
+
+	
+}
+.perfil p{
+	font:1.2em 'Fabada';	
+	line-height:1.68;
+	width:90%;
+	text-align:justify;
+
+}
+
+
+}
+
+/* ESPECÍFICO PARA MÓVIL */
+
+@media only screen and (min-width : 320px) and (max-width : 1100px){
 nav ul{
 	padding-left:3em;
+	text-align:center;
+	padding-top:0.5;
+	padding-bottom:0.5em;
 }
+nav li{
+	font:2.5em 'Fabada';
+	display: block;
+}
+
+.perfil h1{
+
+	margin-left:1em;	
+}
+
+.perfil img{
+	height: 22em; 
+	width: 22em; 
+	/*shape-outside: circle(50%) margin-box; */
+
+	
+}
+.perfil p{
+	clear:both;
+	font:0.8em 'Fabada'; /*cambiada*/	
+	line-height:1.50; /*cambiada*/
+	width:95%;
+	text-align:left;
+	margin-left:2em;
+	margin-right:2em;
+	margin-bottom:2em;
+
+}
+
 
 }
