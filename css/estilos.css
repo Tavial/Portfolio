@@ -6,12 +6,6 @@ body{
 }
 
 /* MENU */
-nav li{
-	display:inline;
-	margin-right:0.8em;
-	font:1.8em 'Fabada';
-	font-weight: 900;
-}
 
 nav li:hover{
 		color:red;
@@ -25,16 +19,11 @@ nav ul{
 }
 
 /* HEADER*/
-header{
-	height:44em;
-}
-
 
 header img{
 	margin:0;
 	padding:0;
 	width:100%; 
-	height:100%;
 }
 
 /*MI PERFIL*/
@@ -85,6 +74,21 @@ nav ul{
 	padding-left:7em;
 }
 
+nav li{
+	display:inline;
+	margin-right:0.8em;
+	font:1.8em 'Fabada';
+	font-weight: 900;
+}
+
+header{
+	height:44em;
+}
+
+
+header img{ 
+	height:100%;
+}
 
 .perfil h1{
 	
@@ -114,15 +118,41 @@ nav ul{
 /* ESPECÍFICO PARA MÓVIL */
 
 @media only screen and (min-width : 320px) and (max-width : 1080px){
+nav {
+		height:25em;
+		margin-bottom:5em;
+	}
+
 nav ul{
-	padding-left:3em;
+	padding-left:2em;
 	text-align:center;
-	padding-top:0.5;
-	padding-bottom:0.5em;
+	padding-top:5em;
 }
 nav li{
-	font:2.5em 'Fabada';
+	font:3em 'Fabada';
+	font-weight:bold;
 	display: block;
+}
+
+header{
+	height:66em;
+	margin-bottom: 3em;
+}
+
+
+header img{
+	height:70%;
+}
+
+.movil {
+	height:30%;
+	width:100%;
+	margin-top:3em;
+	background-image:url("../img/herramientas.png");
+	background-repeat:no-repeat;
+	background-size:contain;
+	
+	
 }
 
 .perfil h1{
