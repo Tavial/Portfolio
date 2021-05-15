@@ -4,7 +4,6 @@
 		<meta charset = "UTF-8"/>
 		<meta name=”description” content=”Portfolio”/>
 		<meta name=”keywords” content=”html5, portfolio, fullstack, python, django, java, alexa, dialogflow, github, agile, scrum, chatbots”/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title> :Tatiana Viejo. Desarrolladora full-stack Python </title>
 		<style>
 			@font-face{
@@ -12,25 +11,30 @@
 				src: url('fonts/Fabada-regular.otf');
 			}
 		</style>
-		<link rel="stylesheet" href="css/estilos.css"/>
+		<link rel="stylesheet" href="css/nuevos_estilos.css"/>
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/arriba.js"></script>
 	<head>
 	<body>
 		<nav>
 			<ul>
-				<li> Inicio </li>
-				<li> Acerca de mí </li>
-				<li> Herramientas </li>
-				<li> Portfolio </li>
+				<li> <a href="#inicio"> Inicio </a> </li>
+				<li> <a href="#sobre_mi">Acerca de mí </a> </li>
+				<li> <a href="#utensilios">Herramientas </a> </li>
+				<li> <a href="#trabajos">Portfolio </a> </li>
 			</ul>
 		</nav>	
-		<header> 
-			<!--
-			<img src="img/fondo.png"/> -->
+
+		<header>
+			<a name="inicio"> </a>
+			<img src="img/fondo_robots.png"/> 
+			<div class="movil"> </div>
 		</header>
+	
 		<section>
 			<article class="perfil"> <!--Acerca de mi-->
-				<h1> Acerca de mí </h1> 
-				
+				<a name="sobre_mi"> </a>
+				<h1> Acerca de mí </h1> 		
 				<figure>
 					<img src="img/mi_foto2.png" class="circulo"> </img>
 				</figure> 
@@ -42,11 +46,11 @@
 				</p>
 				<p>
 					En estos momentos tengo la suerte de trabajar con un gran equipo de compañeros y junto a ellos, voy adquiriendo experiencia y nuevas habilidades en campos como el desarrollo de software, el diseño de robots conversacionales y otras nuevas tecnologías. 
-				</p>
-
+				</p> 
 			</article>
 			<article class="tools"> <!--Herramientas-->
-				<h1> Herramientas y metodologías</h1> 
+				<a name="utensilios"> </a>
+			 	<h1> Herramientas y metodologías</h1> 
 				<figure class="herramientas">
 					<img src="img/python.png"> </img>	
 					<figcaption>
@@ -121,66 +125,93 @@
 					</figcaption>
 				</figure>
 			</article>
+
 			<article class="mi_portfolio"> <!--Mi Portfolio-->
+				<a name="trabajos"> </a>
 				<h1> Portfolio </h1> 
 				<figure class="portfolio">
-					<img src="img/modelismoQT4.png"> </img>	
-					<img class="top" src="img/modelismoQT.png"> </img>
-					<figcaption>
-							Modelismo. Aplicación de escritorio PyQT5
-					</figcaption>
+					<a href="https://github.com/Tavial/cursophyton/tree/master/modelismoFerroviario" target="_blank">
+						<img src="img/modelismoQT4.png"> </img>	
+						<img class="top" src="img/modelismoQT.png"> </img>
+						<figcaption>
+							Aplicación de escritorio PyQT5 (GitHub)
+						</figcaption>
+					</a>
 				</figure>
 				<figure class="portfolio">
-					<img src="img/ferrosale2.png"> </img>	
-					<img class="top" src="img/ferrosale.png"> </img>
-					<figcaption>
-							Ferrosale. Portal de anuncios en Flask
-					</figcaption>
+					<a href="http://tavialflask.pythonanywhere.com/" target="_blank">
+						<img src="img/ferrosale2.png"> </img>	
+						<img class="top" src="img/ferrosale.png"> </img>
+						<figcaption>
+							Aplicación web en Flask
+						</figcaption>
+					</a>
 				</figure>
 				<figure class="portfolio">
-					<img src="img/aquasale4.png"> </img>	
-					<img class="top" src="img/aquasale1.png"> </img>
-					<figcaption>
-							Aquasale. Portal de anuncios en Django
-					</figcaption>
+					<a href="http://tavialdjango.pythonanywhere.com/anuncios/" target="_blank">
+						<img src="img/aquasale4.png"> </img>	
+						<img class="top" src="img/aquasale1.png"> </img>
+						<figcaption>
+							Aplicación web Django
+						</figcaption>
+					</a>
 				</figure>
 				<figure class="portfolio">
-					<img src="img/socceragency3.png"> </img>	
-					<img class="top" src="img/socceragency.png"> </img>
-					<figcaption>
-							SoccerAgency. Aplicación de escritorio Java
-					</figcaption>
+					<a href="https://github.com/Tavial/cursoJava/tree/master/SoccerAgency" target="_blank">
+						<img src="img/socceragency3.png"> </img>	
+						<img class="top" src="img/socceragency.png"> </img>
+						<figcaption>
+							Aplicación de escritorio Java (GitHub)
+						</figcaption>
+					</a>
 				</figure>
 				<figure class="portfolio">
-					<img src="img/housesale.png"> </img>	
-					<img class="top" src="img/housesale0.png"> </img>
-					<figcaption>
-							HouseSale. Portal de anuncios en JEE
-					</figcaption>
+					<a href="https://github.com/Tavial/cursoJava/tree/master/HouseSale" target="_blank">
+						<img src="img/housesale.png"> </img>	
+						<img class="top" src="img/housesale0.png"> </img>
+						<figcaption>
+							Aplicación web Java EE (GitHub)
+						</figcaption>
+					</a>
 				</figure>
 				<figure class="portfolio">
-					<img src="img/alexa.png"> </img>	
-					<img class="top" src="img/alexa.jpg"> </img>
-					<figcaption>
-							Alexa. MADCovid
-					</figcaption>
+					<a href="https://github.com/Tavial/Alexa/tree/main/MADCovid" target="_blank">
+						<img src="img/alexa.png"> </img>	
+						<img class="top" src="img/alexa.jpg"> </img>
+						<figcaption>
+							Alexa. MADCovid (GitHub)
+						</figcaption>
+					</a>
 				</figure>
 			</article>
+			<figure>
+					<img src="img/icono_up.png" class="ir-arriba"> </img>
+			</figure> 
 		</section>
-		<footer>
-			<p>
-				<a href="https://www.freepik.es/vectores/negocios">Imagen cohete creada por freepik - www.freepik.es</a>
-			</p>
-			<p>
-				<a href="https://www.freepik.es/vectores/logo">Imagen bot creada por pch.vector - www.freepik.es</a>
-			</p>
-			<p>
-				Foto Neon background by <a href="https://unsplash.com/@ghuffmanphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">George Huffman</a> on <a href="https://unsplash.com/s/photos/laser?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-			</p>
-			<p>
-				Foto modelismo ferroviario by <a href="https://www.maerklin.de/en/">Catálogo Marklin 2016</a> 
-			</p>
-		</footer>
+		<footer class="pie">
+			<div class="rss_pie">
+				<figure>
+					<a href="https://github.com/Tavial" target="_blank">
+						<img src="img/icono_gitflow.png"> </img>
+					</a>
+					<a href="https://www.linkedin.com/in/tatiana-viejo-%C3%A1lvarez-247762205/" target="_blank">
+						<img src="img/icono_linkedin.png"></img>
+					</a>
+				</figure>	
+			</div>
+			<div class="copyright_pie">
+				<p>
+					Algunas de las imágenes están creadas por <a href="https://www.freepik.es/vectores/negocios" target="_blank"> freepik - www.freepik.es</a>
+				</p>
+				<p>
+					Foto Neon background by <a href="https://unsplash.com/@ghuffmanphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">George Huffman</a> on <a href="https://unsplash.com/s/photos/laser?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
+				</p>
+				<p>
+					Foto modelismo ferroviario by <a href="https://www.maerklin.de/en/" target="_blank">Catálogo Marklin 2016</a> 
+				</p>
+			</div>
+		</footer> 
 	</body>
 
 </html>
+
