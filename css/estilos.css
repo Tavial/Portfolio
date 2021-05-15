@@ -7,16 +7,23 @@ body{
 
 /* MENU */
 
-nav li:hover{
+nav li a:hover{
 		color:red;
 		cursor:pointer;
 		cursor:hand;
 }
 
+a:link, a:visited, a:active{
+	text-decoration: none;
+	color:#000;
+}
+
 nav ul{
 	width:80%;
 	margin: 0.2em auto;
+	
 }
+
 
 /* HEADER*/
 
@@ -24,6 +31,21 @@ header img{
 	margin:0;
 	padding:0;
 	width:100%; 
+}
+
+/* BOTON DE IR ARRIBA */
+
+.ir-arriba {
+	display:none;
+	padding:20px;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+	height: 4em;
+	width: 4em;
 }
 
 /*MI PERFIL*/
@@ -145,6 +167,49 @@ header img{
 	text-shadow: #33313B 0.1em 0.1em 0.8em; /*sombreamos el texto*/	
 }
 
+/* FOOTER */
+.pie{
+	float:left;
+	margin-top:2em;
+	margin-bottom:2em;
+	width:100%;
+	
+
+}
+.pie p {
+	display:inline;
+	font:0.6em 'Fabada';
+	font-weight:800;
+}
+.rss_pie{
+	text-align:center; 
+	
+}
+.copyright_pie{
+	text-align:center; 
+	
+}
+.rss_pie img{
+	left: 0;
+	height: 3em;
+	width: 3em;
+}
+.rss_pie img:hover{
+	cursor:pointer;
+	cursor:hand;
+	transform:scale(1.2);
+}
+
+.copyright_pie a:hover{
+		cursor:pointer;
+		cursor:hand;
+		color:blue;
+}
+
+.copyright_pie a:link, a:visited, a:active{
+	text-decoration: none;
+	color:#000;
+}
 
 
 
